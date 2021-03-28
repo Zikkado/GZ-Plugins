@@ -1,0 +1,65 @@
+######################################################################################################################################
+##**********************************************************************************************************************************##
+##**********************************************************************************************************************************##
+##**************#############   ##############*******###########****##************#######****##********##**########*****************##                                  
+##**************##*************************##********##*********##**##**********##*******##**###*******##**##******##***************##
+##**************##**********************##***********##*********##**##**********##*******##**##*##*****##**##*******##**************##    
+##**************##*****######********##**************###########****##**********##*******##**##***##***##**##*******##**************##
+##**************##*********##******##****************##*********##**##**********###########**##*****##*##**##*******##**************##
+##**************##*********##****##******************##*********##**##**********##*******##**##******####**##******##***************##
+##**************#############**###############*******###########****##########**##*******##**##********##**########*****************##
+##**********************************************************************************************************************************##
+##**************Donates PayPal: https://www.paypal.com/donate/?cmd=_s-xclick&hosted_button_id=8FEDVJC4D8P9S&source=url**************##
+######################################################################################################################################
+
+#Configurações SQL false para SQLITE
+MySQL:
+ Enable: false
+ host: localhost
+ port: 3306
+ user: root
+ pass: ''
+ DB: database
+ 
+#Configurações Do Money 
+MoneyConfigs:
+ StartMoney: 1000
+ Simbolo: "R$"
+ #Caso alguem plugin use a fun
+ Singular: "Coin"
+ Plural: "Coins"
+   
+
+
+#Comando /money -> Mostra o Valor Em Banco!
+Bank: "&2Banco: &e{amount}"
+#Comando /money <player> -> Mostra o Valor do Banco do Usuario
+BankOthers: "&2Banco de {target}: &e{amount}"
+
+#Tag Magnata Funciona no LegendChat {magnata} Atualiza a cada 5 minutos! junto com o AutoSave
+Magnata: "&7[&a$&7]"
+
+#Pessoa que Realizou o Comando
+Admin:
+ Add: "&2Foram Adicionados &e{amount} &2para &e{target}"
+ Set: "&2O Banco de &e{target} &2Foi Definido para &e{amount}"
+ Pay: "&2Você Enviou &e{amount} &2para &e{target}"
+ Remove: "&2Você Removeu &e{amount} &2e &e{target}"
+ 
+#Pessoa que teve Influencia ao Comando 
+User:
+ Add: "&2Foram Adicionados &e{amount} &2Ao Seu Banco"
+ Set: "&2Seu Banco Foi Setado Para &e{amount}" 
+ Pay: "&2Você Recebeu &e{amount} &2de &e{player}"
+ Remove: "&2Foram Removidos &e{amount} &2do Seu Banco"
+ Tops:
+  Titulo:
+  - ""
+  - "&a&l             TOP 5 MAIS RICOS DO SERVIDOR"
+  - ""
+  Formato: "&2{position} &7{player} &2: &7{amount} {magnata}" #OBS o {magnata} não aparece para pessoas que não estejam em top 1
+  Magnata:
+   Titulo: "&2&lMAGNATA"
+   Sub: "&2O &7{player} &2Virou o Magnata do Servidor Com &7{amount}!"
+   Chat: "&2O &7{player} &2Virou o Magnata do Servidor Com &7{amount}!"
+  

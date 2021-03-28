@@ -1,0 +1,7 @@
+name: GZ_Limpezas
+version: 0.1
+main: me.gz.limpeza.main
+api-version: 1.13
+commands:
+ limpar:
+  permission: gz.limpeza.use

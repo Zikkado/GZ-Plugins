@@ -1,0 +1,54 @@
+######################################################################################################################################
+##**********************************************************************************************************************************##
+##**********************************************************************************************************************************##
+##**************#############   ##############*******###########****##************#######****##********##**########*****************##                                  
+##**************##*************************##********##*********##**##**********##*******##**###*******##**##******##***************##
+##**************##**********************##***********##*********##**##**********##*******##**##*##*****##**##*******##**************##    
+##**************##*****######********##**************###########****##**********##*******##**##***##***##**##*******##**************##
+##**************##*********##******##****************##*********##**##**********###########**##*****##*##**##*******##**************##
+##**************##*********##****##******************##*********##**##**********##*******##**##******####**##******##***************##
+##**************#############**###############*******###########****##########**##*******##**##********##**########*****************##
+##**********************************************************************************************************************************##
+##**************Donates PayPal: https://www.paypal.com/donate/?cmd=_s-xclick&hosted_button_id=8FEDVJC4D8P9S&source=url**************##
+######################################################################################################################################
+
+
+#Tempo que vai fazer a limpeza obs em Segundos
+Tempo: 180 #3 Minutos
+
+#Detecta o Max de Entidades Dropadas e Força uma Limpeza
+AutoDetect: true
+MaxEntidades: 150
+#Itens Nesta Lista não serão Deletados!
+Ignorar:
+ - "BOAT"
+ - "MINECART"
+
+
+
+#Caso o Chão não tenha nenhum Sujeira você Pode Recompensar Jogadores
+Recompensar:
+ enable: false
+ commands:
+ - 'money add %players% 100000'
+ - 'givefragmento %players% 100'
+ 
+#Traduções
+Gerais:
+ SemPerm: "&f&l[&f&lRede&6&lEx&f&l] &cVocê não Possui Permissão para Usar este Comando!"
+ NenhumItem: "&f&l[&f&lRede&6&lEx&f&l] &aNenhum Entidade Foi Detectada :) Mantenha o Chão Limpo!"
+ Recompensas: "&f&l[&f&lRede&6&lEx&f&l] &aTodos Foram Recompensados Por Manter o Chão Limpo! :)"
+ Limpar: "&f&l[&f&lRede&6&lEx&f&l] &aForam Removidas: &e %quantidade% &aEntidades"
+ Force:
+  Sender: "&f&l[&f&lRede&6&lEx&f&l] &aVocê Forçou a Limpeza do Chão!"
+  UltimosSegundos: "&f&l[&f&lRede&6&lEx&f&l] &cO Chão está nos Ultimos Segundos para Ser Limpo!"
+  Players: "&f&l[&f&lRede&6&lEx&f&l] &aA Limpeza Foi Forçada pelo Administrador!"
+ 
+#Os Alertas Gerais 
+Alertas:
+ Detectar: "&f&l[&f&lRede&6&lEx&f&l] &aDetectamos uma alta Quantidade de Itens! Forçamos uma Limpeza..."
+ UmMinuto: "&f&l[&f&lRede&6&lEx&f&l] &aLimparemos O Chão em &e1 &aMinuto"
+ TrintaSegundos: "&f&l[&f&lRede&6&lEx&f&l] &aLimparemos O Chão em 30 Segundos"
+ DezSegundos: "&aLimpando O Chão em &e10 &aSegundos"
+ UltimosSegundos: "&aLimpando O Chão em &e%temp% &aSegundos"
+ 

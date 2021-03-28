@@ -1,0 +1,8 @@
+name: GZ_Economy
+author: GZ_Bland
+version: 1.0
+main: me.gz.economy.main
+load: STARTUP
+commands:
+ money:
+  description: Comandos Gerais

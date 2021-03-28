@@ -1,0 +1,12 @@
+Configs:
+ #Materiais List: https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Material.html
+ FillArround:
+  Name: '&6&kkkkkkk'
+  Item: STAINED_GLASS_PANE #Não Use ID use nomes
+  Data: 15
+  Enchant: false
+ MoneyTop:
+  Lore:
+  - "&a&lBanco de &7&l{player} {magnata}"
+  - "&a&lBanco: &7&l{amount}"
+  
